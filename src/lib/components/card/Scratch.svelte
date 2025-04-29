@@ -180,7 +180,7 @@
     {/if}
     {#if showText}
       <div class="floating-text">
-        <p class="text-xl font-bold text-white">Gosok-gosok berhadiah!</p>
+        <p class="text-xl font-bold text-white">Gosok2 berhadiah!</p>
       </div>
     {/if}
     {#if showSuccessText}

@@ -32,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/sanjikunnn">
 			<img src={github} alt="GitHub" class="w-8 h-8 filter invert hue-rotate-90" />
 		</a>
 	</div>
@@ -42,6 +42,11 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		z-index: 30; /* supaya header selalu di atas konten lain */
+		background: transparent; /* background biar gak transparan pas scroll */
+		backdrop-filter: blur(10px); /* opsional, kasih efek blur elegan */
 	}
 
 	.corner {

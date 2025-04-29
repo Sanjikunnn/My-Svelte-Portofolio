@@ -1,43 +1,76 @@
 <script>
     import Marquee from "$lib/components/card/Marquee.svelte";
     import Reviewcard from "$lib/components/card/Review.svelte";
-  
+    import Foto from "$lib/images/avatars/boy (1).png";
+    import Foto1 from "$lib/images/avatars/boy.png";
+    import Foto2 from "$lib/images/avatars/gamer.png";
+    import Foto3 from "$lib/images/avatars/hacker.png";
+    import Foto4 from "$lib/images/avatars/man (1).png";
+    import Foto5 from "$lib/images/avatars/man (2).png";
+    import Foto6 from "$lib/images/avatars/man (3).png";
+    import Foto7 from "$lib/images/avatars/man.png";
+    import Foto8 from "$lib/images/avatars/woman (1).png";
+    import Foto9 from "$lib/images/avatars/woman.png";
     const reviews = [
       {
-        name: "Bhide",
-        username: "@Bhide",
-        body: "Noicee work. I love it. Keep it up.",
-        img: "https://avatar.vercel.sh/jack",
+        name: "CEO Bukalapak",
+        username: "@Bukalapak",
+        body: "Keren bangettttt website nyaaa......",
+        img: Foto,
       },
       {
-        name: "Jodd",
-        username: "@Jodd",
-        body: "Wooww, this is what I was looking for. Great work.",
-        img: "https://avatar.vercel.sh/jill",
+        name: "CEO Gojek",
+        username: "@Gojek",
+        body: "Wooww, inimah the best banget sih.....",
+        img: Foto1,
       },
       {
-        name: "Pokie",
-        username: "@Pokie",
-        body: "Svelte is Amazing and so are you. Keep it up.",
-        img: "https://avatar.vercel.sh/john",
+        name: "CEO Grab",
+        username: "@Grab",
+        body: "Mas Iqbal emang gada tandingannyaaaa....",
+        img: Foto2,
       },
       {
-        name: "pablo",
-        username: "@pablo",
-        body: "Remarkable Stuff broooo. Added to my favourites.",
-        img: "https://avatar.vercel.sh/jane",
+        name: "CEO Shopee",
+        username: "@Shopiput",
+        body: "Pengerjaannya cepet banget, Recomended sih ini!!!",
+        img: Foto3,
       },
       {
-        name: "Saloni",
-        username: "@Saloni",
-        body: "Acche hai, Chal mera Portfolio banade.",
-        img: "https://avatar.vercel.sh/jenny",
+        name: "CEO Lazada",
+        username: "@Lazekpress",
+        body: "Lebih Murah dari yang lainnn!!!!",
+        img: Foto4,
       },
       {
-        name: "Bhai",
-        username: "@Bhai",
-        body: "Svelte made easy with these components. Great work.",
-        img: "https://avatar.vercel.sh/james",
+        name: "CEO Tokped",
+        username: "@Tokpedo",
+        body: "Full senyum maseehhh karna dari mas iqbal full support!!!",
+        img: Foto5,
+      },
+      {
+        name: "CEO Michat",
+        username: "@Mychat",
+        body: "Inimah bukan buka jasa, tapi bantu orang, ini worth it banget woy kudu dicoba weh....",
+        img: Foto6,
+      },
+      {
+        name: "CEO Maxim",
+        username: "@Maximin",
+        body: "Developer Trusted!!!",
+        img: Foto7,
+      },
+      {
+        name: "CEO Pesona Indonesia",
+        username: "@Pesin",
+        body: "Dan kau hadiiiiiiiiirrr merubah segalanyaaaaa, menjadi lebih indahhhhhh",
+        img: Foto8,
+      },
+      {
+        name: "CEO Pesbuk",
+        username: "@Pesnuk",
+        body: "Woy lu member IMPHNEN yaaaaaaaaaa......",
+        img: Foto9,
       },
     ];
   

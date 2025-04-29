@@ -5,6 +5,7 @@
 	import Meteors from "$lib/components/card/Meteor.svelte";
 	import ModulCard from "$lib/components/card/ModulCard.svelte";
 	import Marquee from "$lib/components/card/MarqueeExample.svelte";
+	import ProjectCard from "$lib/components/card/Product.svelte";
 	import Circular from "$lib/components/progress/Circular.svelte";
 	import Scroll from "$lib/components/button/ScrollToTop.svelte";
 
@@ -40,37 +41,106 @@
   </div>
   
   <!-- UI Project Section -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-	  <div class="text-center max-w-xl mb-10">
-		  <h2 class="text-2xl font-bold text-white mb-2">💻 Proyek & Eksperimen UI</h2>
-		  <p class="text-neutral-400">
-			  Beberapa komponen UI, layout, dan eksperimen desain gue. Semua dirancang dengan pendekatan modern yang clean, cocok buat project startup, portfolio, sampe produk komersil.
-		  </p>
+  <section class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="text-center max-w-xl mb-10">
+	<h2 class="text-2xl font-bold text-white mb-2">💻 Proyek Freelance</h2>
+	<p class="text-neutral-400 text-justify justify-center">
+		Beberapa proyek freelance yang saya kerjakan, dirancang dengan tujuan untuk memberikan solusi yang simpel dan efisien, serta mudah dipahami oleh peneliti</p>
+	</div>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 text-justify justify-center">
+		<ProjectCard 
+		  title="Sistem Penjualan Tabung Gas"
+		  description="Sistem Penjualan Gas dengan dua mode transaksi: langsung dan konsinyasi. Menyediakan laporan real-time dan UI yang ramah pengguna."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://sistem-penjualan-tabung-gas.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Sistem Pemesanan Menu Cafe"
+		  description="Website sistem pemesanan untuk cafe yang mengintegrasikan Midtrans sebagai payment gateway, dengan desain responsif dan user-friendly."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://sistem-pemesanan-cafe.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Sistem Absensi Face Recognition & Lokasi"
+		  description="Sistem Absensi berbasis Face Recognition dan Lokasi untuk memudahkan pencatatan kehadiran dengan keamanan lebih baik dan akurasi data."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://absensi-face-recognition.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Sistem Barcode Generated untuk FIFO"
+		  description="Sistem FIFO untuk input barang masuk & keluar, secara otomatis menghasilkan barcode PNG dari nomor barcode teks setiap inputan barang."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://sistem-barcode-fifo.vercel.app"
+		/>
 	  </div>
-  
-	  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-		  {#each Array(6) as _, i}
-			  <div class="animate-shine max-w-[350px] w-full rounded-xl text-sm border border-white/10 
-				  bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-4 py-5 transition-colors">
-				  <div class="flex flex-col gap-2">
-					  <h3 class="text-xl font-semibold text-neutral-200">Project #{i + 1}</h3>
-					  <p class="text-sm leading-[1.5] text-neutral-400">
-						  Salah satu project favorit gue, dibuat dengan sentuhan dark mode yang smooth dan performa optimal.
-					  </p>
-					  <button class="inline-flex animate-shine items-center justify-center rounded-xl text-sm border border-neutral-800 
-						  bg-[linear-gradient(110deg,#101010,45%,#1e2631,55%,#101010)] bg-[length:200%_100%] 
-						  px-4 py-1 font-medium text-neutral-200 transition-colors">
-						  Lihat Detail
-					  </button>
-				  </div>
-			  </div>
-		  {/each}
+	  
+
+	<div class="text-center max-w-xl mb-10 mt-10">
+	<h2 class="text-2xl font-bold text-white mb-2">💻 Proyek Eksperimen</h2>
+	<p class="text-neutral-400 text-justify justify-center">
+		Beberapa proyek eksperimen yang saya kerjakan, dirancang untuk menguji konsep baru dan mengeksplorasi tech stack lainnya. Berikut adalah proyek-proyek yang telah saya kerjakan.
+	</div>
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 text-justify justify-center">
+		<ProjectCard 
+		  title="Ramal Khodam"
+		  description="Website hiburan dengan ramalan khodam lucu dan unik yang memberikan hiburan penuh tawa."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://khodam-lucu.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Bersama Si Cantikk"
+		  description="Website digital memory dengan efek animasi 3D box interaktif untuk mengenang momen bersama orang tersayang."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://bersamasicantikk.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Habede Kaka"
+		  description="Website ucapan ulang tahun dengan animasi menarik untuk memberikan ucapan lebih spesial."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://habedekaka.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Suki Yo Kobo"
+		  description="Website aesthetic dengan vibes Jepang, cocok untuk wibu penggemar desain minimalis."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://suki-yo-kobo.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Ibal Jadi Caleg"
+		  description="Website kampanye digital dengan UI interaktif yang dapat dikustomisasi sesuai kebutuhan caleg."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://ibaljadicaleg.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="cmd-portofolio"
+		  description="Portfolio website dengan desain cepat, ringan, dan SEO-friendly, dibuat menggunakan Typescript."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://cmd-porto-fzmhq.vercel.app"
+		/>
+		
+		<ProjectCard 
+		  title="Yukita Puasa"
+		  description="Website untuk mengingatkan waktu berbuka dan sahur selama bulan puasa dengan fitur interaktif seperti baca al-quran dan jadwal solat."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://yukitapuasa.vercel.app"
+		/>
 	  </div>
-  
+	  
+	  
 	  <div class="text-center mt-16 max-w-xl mx-auto">
-		  <h2 class="text-2xl font-bold text-white mb-2">Masih Banyak Lagi 🔥</h2>
-		  <p class="text-neutral-400">
-			  Scroll terus ke bawah buat lihat komponen interaktif lainnya dan berbagai produk unggulan hasil karya gue. Semua dibuat dengan 💖 & <code>Svelte</code>!
+		  <h2 class="text-2xl font-bold text-white mb-2 ">Masih Banyak Lagi 🔥</h2>
+		  <p class="text-neutral-400 text-justify justify-center">
+			  Scroll terus ke bawah buat lihat komponen ui interaktif lainnya dari svelte yang diimplementasikan dalam pembuatan website ini dan juga berbagai produk unggulan hasil karya gue. Semua dibuat dengan 💖 & <code>Svelte</code>!
 		  </p>
 	  </div>
   </section>
@@ -82,9 +152,6 @@
   <section>
 	  <h1 class="text-2xl font-bold mb-4 text-white text-center">Produk Unggulan</h1>
 	  <div class="flex flex-wrap gap-6 justify-center">
-		  <ProductCard />
-		  <ProductCard />
-		  <ProductCard />
 		  <ProductCard />
 	  </div>
   </section>

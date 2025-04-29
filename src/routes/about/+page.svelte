@@ -3,18 +3,15 @@
 	import ShineBorder from "$lib/components/card/Shine.svelte";
 	import Foto from "$lib/images/fotogw.jpeg";
 	import TextGenerateEffect from "$lib/components/text/Generate.svelte";
-  
+  import InteractiveHover from "$lib/components/button/Interactive.svelte";
+  import FlipText from "$lib/components/text/Flip.svelte";
+
 	const paragraphs = [
-    "Hai, saya pengembang web yang suka banget sama yang namanya tantangan! Lebih dari 1 tahun berkutat di dunia coding, mulai dari website simple hingga aplikasi yang lebih kompleks.",
-    "Sekarang, saya fokus banget ngulik teknologi seperti SvelteKit ini, supaya bisa bikin aplikasi yang enggak cuma powerful tapi juga gampang dipakai dan reusable.",
-    "Btw, di luar ngoding, saya senang ngegali tren teknologi terbaru. Sering ikut proyek open-source di github dan eksperimen sama desain UI/UX.",
-    "Jadi, kalau kamu punya ide atau proyek yang butuh kolaborasi, langsung aja hubungi saya. Siapa tahu kita bisa kerja bareng dan bikin sesuatu yang keren!",
-    "Saya selalu berusaha untuk memberikan solusi yang nggak cuma ‘beres’ tapi juga bener-bener ngasih dampak positif buat pengguna.",
-    "Selain web development, saya juga tertarik dengan software engineering, khususnya yang berhubungan dengan integrasi API dan pengolahan data besar.",
-    "Bekerja dengan teknologi yang terus berkembang itu memang menantang, tapi buat saya, itu justru yang bikin makin seru! Saya selalu berusaha belajar hal baru supaya hasil kerja saya makin oke.",
-    "Punya proyek baru atau ide yang butuh solusi kreatif? Jangan ragu untuk menghubungi saya! Saya terbuka untuk tantangan baru dan kerjasama yang seru.",
-    "Saya percaya banget kalau teknologi itu punya potensi besar untuk bikin hidup kita lebih mudah dan efisien. Jadi, saya ingin jadi bagian dari perubahan itu.",
-    "Kalau kamu lagi cari partner buat proyek baru, atau butuh ngobrolin ide-ide inovatif, langsung aja reach out! Saya siap membantu mewujudkannya."
+    "Halo, saya adalah seorang programmer pemula yang saat ini sedang fokus membangun pondasi karier di dunia teknologi, khususnya di bidang web development. Ketertarikan saya terhadap dunia coding bermula dari rasa penasaran tentang bagaimana sebuah website bisa bekerja. Dari situ, saya mulai belajar secara otodidak, mulai dari dasar seperti HTML, CSS, Laravel, JavaScript, sampai sekarang berkembang ke framework modern seperti Astro, dan Svelte",
+    "Selain belajar mandiri, saya juga mengasah kemampuan lewat pengalaman freelance. Salah satu pengalaman berharga yang saya jalani adalah menjadi joki skripsi. Hingga saat ini, saya sudah membantu beberapa orang dalam menyelesaikan project skripsinya, terutama dalam pembuatan aplikasi berbasis web. Dari pengalaman itu, saya tidak hanya mengasah skill teknis, tapi juga belajar soal komunikasi dengan klien, memahami kebutuhan orang lain, mengatur deadline, dan bertanggung jawab penuh atas hasil kerja saya.",
+    "Di dunia programming, saya tertarik mengembangkan kemampuan di bidang web application, backend development, dan API integration. Saya juga mulai mencoba mengeksplorasi dunia mobile app development karena merasa teknologi saat ini semakin mengarah ke arah mobile-first. Selain itu, saya punya ketertarikan di bidang UI/UX sederhana, terutama soal bagaimana membuat user experience yang nyaman dan responsif.",
+    "Minat kerja saya ke depan adalah bergabung dengan tim pengembang di startup atau perusahaan teknologi yang aktif berkembang, di mana saya bisa belajar lebih banyak, mendapatkan bimbingan dari senior, dan berkontribusi nyata lewat project-project yang dikerjakan. Saya juga tidak menutup kemungkinan untuk terus menjalani freelance di samping pekerjaan utama, karena dari sana saya merasa banyak mendapatkan tantangan baru yang seru untuk perkembangan skill saya.",
+    "Saya percaya, dunia IT itu luas dan terus berubah cepat. Karena itu, saya berkomitmen untuk terus belajar, beradaptasi, dan membuka diri terhadap ilmu-ilmu baru yang bisa menunjang perjalanan karier saya ke depan. Bagi saya, selama ada kemauan untuk belajar dan berkembang, kesempatan akan selalu ada."
 ];
 
 
@@ -54,17 +51,29 @@
       </div>
     </div>
   </div>
-
+  <div class="flex justify-center items-center h-full">
+    <a
+    href="https://drive.google.com/uc?export=download&id=1i5WvvDsSI_ZqAXohPD6EwUNmqtsJps-k"
+    download
+    >
+      <InteractiveHover text="📑 Curriculum Vitae" class="text-sm" />
+    </a>
+  </div>
+  <!-- Paragraf-paragraf animasi -->
   <!-- Section untuk teks dengan efek animasi -->
-  <section class="min-h-screen max-w-4xl mx-auto text-left justify-center space-y-1">
+  <section class="min-h-screen max-w-4xl mx-auto text-justify justify-center space-y-0">
     <!-- Judul animasi -->
-    <TextGenerateEffect words="Faizal Muhamad Iqbal, S.Kom" className="text-xl md:text-6xl font-bold text-center text-white" paragraphIndex={0} />
+    <FlipText
+      class="text-2xl sm:text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white dark:text-white mt-5"
+      word="Faizal Muhamad Iqbal, S.Kom"
+    />
   
-    <!-- Paragraf-paragraf animasi -->
+    <TextGenerateEffect words="" className="text-xl md:text-6xl font-bold text-center text-white" paragraphIndex={0} />
+    
     {#each paragraphs as text, i}
       <TextGenerateEffect
         words={text}
-        className={`text-l leading-relaxed text-gray-800 dark:text-gray-200 ${i === 1 ? 'bg-gray-900 text-green-400 p-4 rounded-lg text-sm' : ''}`}
+        className={`text-l leading-relaxed text-gray-800 dark:text-gray-200 ${i === 1 ? 'bg-gray-900 text-green-400 p-2 rounded-lg text-sm' : ''}`}
         paragraphIndex={i + 1} 
       />
     {/each}

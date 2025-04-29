@@ -56,12 +56,6 @@ let {
         line-height: 1.6;
     }
 
-    footer .icon {
-        vertical-align: middle;
-        color: #fc00c5;
-        margin: 0 8px;
-    }
-
     footer a {
         color: #fff;
         text-decoration: none;
