@@ -8,6 +8,49 @@
 	import ProjectCard from "$lib/components/card/Product.svelte";
 	import Circular from "$lib/components/progress/Circular.svelte";
 	import Scroll from "$lib/components/button/ScrollToTop.svelte";
+	import Absen1 from "$lib/images/project/absen/absen1.jpg";
+	import Absen2 from "$lib/images/project/absen/absen2.jpg";
+	import Absen3 from "$lib/images/project/absen/absen3.jpg";
+	import Fifo1 from "$lib/images/project/fifo/fifo1.jpg";
+	import Gas1 from "$lib/images/project/gas/gas1.jpg";
+	import Gas2 from "$lib/images/project/gas/gas2.jpg";
+	import Gas3 from "$lib/images/project/gas/gas3.jpg";
+	import Gas4 from "$lib/images/project/gas/gas4.jpg";
+	import Gas5 from "$lib/images/project/gas/gas5.jpg";
+	import Kafe1 from "$lib/images/project/kafe/kafe1.jpg";
+	import Kafe2 from "$lib/images/project/kafe/kafe2.jpg";
+	import Kafe3 from "$lib/images/project/kafe/kafe3.jpg";
+	import Kafe4 from "$lib/images/project/kafe/kafe4.jpg";
+	import Kafe5 from "$lib/images/project/kafe/kafe5.jpg";
+	import Caleg1 from "$lib/images/project/caleg/caleg1.png";
+	import Caleg2 from "$lib/images/project/caleg/caleg2.png";
+	import Caleg3 from "$lib/images/project/caleg/caleg3.png";
+	import Caleg4 from "$lib/images/project/caleg/caleg4.png";
+	import Caleg5 from "$lib/images/project/caleg/caleg5.png";
+	import Caleg6 from "$lib/images/project/caleg/caleg6.png";
+	import Caleg7 from "$lib/images/project/caleg/caleg7.png";
+	import Cantik1 from "$lib/images/project/cantik/cantik1.png";
+	import Cantik2 from "$lib/images/project/cantik/cantik2.png";
+	import Cantik3 from "$lib/images/project/cantik/cantik3.png";
+	import Cmd1 from "$lib/images/project/cmd/cmd1.png";
+	import Cmd2 from "$lib/images/project/cmd/cmd2.png";
+	import Cmd3 from "$lib/images/project/cmd/cmd3.png";
+	import Cmd4 from "$lib/images/project/cmd/cmd4.png";
+	import Hbd1 from "$lib/images/project/hbd/hbd1.png";
+	import Hbd2 from "$lib/images/project/hbd/hbd2.png";
+	import Hbd3 from "$lib/images/project/hbd/hbd3.png";
+	import Hbd4 from "$lib/images/project/hbd/hbd4.png";
+	import Hbd5 from "$lib/images/project/hbd/hbd5.png";
+	import Khodam1 from "$lib/images/project/khodam/khodam.png";
+	import Khodam2 from "$lib/images/project/khodam/khodam1.png";
+	import Khodam3 from "$lib/images/project/khodam/khodam2.png";
+	import Sukiyo1 from "$lib/images/project/sukiyo/sukiyo1.png";
+	import Sukiyo2 from "$lib/images/project/sukiyo/sukiyo2.png";
+	import Yukita1 from "$lib/images/project/yukita/yukita1.png";
+	import Yukita2 from "$lib/images/project/yukita/yukita2.png";
+	import Yukita3 from "$lib/images/project/yukita/yukita3.png";
+	import Yukita4 from "$lib/images/project/yukita/yukita4.png";
+	import Yukita5 from "$lib/images/project/yukita/yukita5.png";
 
   </script>
   
@@ -16,7 +59,7 @@
 	  <meta name="description" content="Portofolio Faizal Muhamad Iqbal, seorang freelance fullstack developer yang kreatif dan dinamis." />
   </svelte:head>
   
-  <!-- Section untuk Meteors -->
+  <!-- Section untuk scroll -->
   <section class="mb-10">
    <Scroll />
   </section>
@@ -54,6 +97,7 @@
 		  description="Sistem Penjualan Gas dengan dua mode transaksi: langsung dan konsinyasi. Menyediakan laporan real-time dan UI yang ramah pengguna."
 		  buttonText="Lihat Detail"
 		  buttonLink="https://sistem-penjualan-tabung-gas.vercel.app"
+		  imageList={[ Gas1, Gas2, Gas3, Gas4, Gas5]}
 		/>
 		
 		<ProjectCard 
@@ -61,6 +105,7 @@
 		  description="Website sistem pemesanan untuk cafe yang mengintegrasikan Midtrans sebagai payment gateway, dengan desain responsif dan user-friendly."
 		  buttonText="Lihat Detail"
 		  buttonLink="https://sistem-pemesanan-cafe.vercel.app"
+		  imageList={[ Kafe1, Kafe2, Kafe3, Kafe4, Kafe5]}
 		/>
 		
 		<ProjectCard 
@@ -68,6 +113,7 @@
 		  description="Sistem Absensi berbasis Face Recognition dan Lokasi untuk memudahkan pencatatan kehadiran dengan keamanan lebih baik dan akurasi data."
 		  buttonText="Lihat Detail"
 		  buttonLink="https://absensi-face-recognition.vercel.app"
+		  imageList={[ Absen1, Absen2, Absen3 ]}
 		/>
 		
 		<ProjectCard 
@@ -75,6 +121,7 @@
 		  description="Sistem FIFO untuk input barang masuk & keluar, secara otomatis menghasilkan barcode PNG dari nomor barcode teks setiap inputan barang."
 		  buttonText="Lihat Detail"
 		  buttonLink="https://sistem-barcode-fifo.vercel.app"
+		  imageList={[ Fifo1 ]}
 		/>
 	  </div>
 	  
@@ -89,50 +136,57 @@
 		<ProjectCard 
 		  title="Ramal Khodam"
 		  description="Website hiburan dengan ramalan khodam lucu dan unik yang memberikan hiburan penuh tawa."
-		  buttonText="Lihat Detail"
-		  buttonLink="https://khodam-lucu.vercel.app"
+		  buttonText="Lihat Web"
+		  buttonLink="https://khodamku-coral.vercel.app/"
+		  imageList={[ Khodam1, Khodam2, Khodam3 ]}
 		/>
 		
 		<ProjectCard 
 		  title="Bersama Si Cantikk"
-		  description="Website digital memory dengan efek animasi 3D box interaktif untuk mengenang momen bersama orang tersayang."
-		  buttonText="Lihat Detail"
+		  description="Website digital memory dengan efek animasi 3D box interaktif untuk mengenang momen bersama ayang."
+		  buttonText="Lihat Web"
 		  buttonLink="https://bersamasicantikk.vercel.app"
+		  imageList={[ Cantik1, Cantik2, Cantik3 ]}
 		/>
 		
 		<ProjectCard 
 		  title="Habede Kaka"
 		  description="Website ucapan ulang tahun dengan animasi menarik untuk memberikan ucapan lebih spesial."
-		  buttonText="Lihat Detail"
+		  buttonText="Lihat Web"
 		  buttonLink="https://habedekaka.vercel.app"
+		  imageList={[ Hbd1, Hbd2, Hbd3, Hbd4, Hbd5]}
 		/>
 		
 		<ProjectCard 
 		  title="Suki Yo Kobo"
 		  description="Website aesthetic dengan vibes Jepang, cocok untuk wibu penggemar desain minimalis."
-		  buttonText="Lihat Detail"
+		  buttonText="Lihat Web"
 		  buttonLink="https://suki-yo-kobo.vercel.app"
+		  imageList={[ Sukiyo1, Sukiyo2 ]}
 		/>
 		
 		<ProjectCard 
 		  title="Ibal Jadi Caleg"
 		  description="Website kampanye digital dengan UI interaktif yang dapat dikustomisasi sesuai kebutuhan caleg."
-		  buttonText="Lihat Detail"
+		  buttonText="Lihat Web"
 		  buttonLink="https://ibaljadicaleg.vercel.app"
+		  imageList={[ Caleg1, Caleg2, Caleg3, Caleg4, Caleg5, Caleg6, Caleg7 ]}
 		/>
 		
 		<ProjectCard 
 		  title="cmd-portofolio"
 		  description="Portfolio website dengan desain cepat, ringan, dan SEO-friendly, dibuat menggunakan Typescript."
-		  buttonText="Lihat Detail"
+		  buttonText="Lihat Web"
 		  buttonLink="https://cmd-porto-fzmhq.vercel.app"
+		  imageList={[ Cmd1, Cmd2, Cmd3, Cmd4 ]}
 		/>
 		
 		<ProjectCard 
 		  title="Yukita Puasa"
 		  description="Website untuk mengingatkan waktu berbuka dan sahur selama bulan puasa dengan fitur interaktif seperti baca al-quran dan jadwal solat."
-		  buttonText="Lihat Detail"
+		  buttonText="Lihat Web"
 		  buttonLink="https://yukitapuasa.vercel.app"
+		  imageList={[ Yukita1, Yukita2, Yukita3, Yukita4, Yukita5]}
 		/>
 	  </div>
 	  

@@ -5,7 +5,8 @@
 	import TextGenerateEffect from "$lib/components/text/Generate.svelte";
   import InteractiveHover from "$lib/components/button/Interactive.svelte";
   import FlipText from "$lib/components/text/Flip.svelte";
-
+	import Circular from "$lib/components/progress/Circular.svelte";
+	import Scroll from "$lib/components/button/ScrollToTop.svelte";
 	const paragraphs = [
     "Halo, saya adalah seorang programmer pemula yang saat ini sedang fokus membangun pondasi karier di dunia teknologi, khususnya di bidang web development. Ketertarikan saya terhadap dunia coding bermula dari rasa penasaran tentang bagaimana sebuah website bisa bekerja. Dari situ, saya mulai belajar secara otodidak, mulai dari dasar seperti HTML, CSS, Laravel, JavaScript, sampai sekarang berkembang ke framework modern seperti Astro, dan Svelte",
     "Selain belajar mandiri, saya juga mengasah kemampuan lewat pengalaman freelance. Salah satu pengalaman berharga yang saya jalani adalah menjadi joki skripsi. Hingga saat ini, saya sudah membantu beberapa orang dalam menyelesaikan project skripsinya, terutama dalam pembuatan aplikasi berbasis web. Dari pengalaman itu, saya tidak hanya mengasah skill teknis, tapi juga belajar soal komunikasi dengan klien, memahami kebutuhan orang lain, mengatur deadline, dan bertanggung jawab penuh atas hasil kerja saya.",
@@ -59,7 +60,14 @@
       <InteractiveHover text="📑 Curriculum Vitae" class="text-sm" />
     </a>
   </div>
-  <!-- Paragraf-paragraf animasi -->
+  <!-- Circular Sticky Section -->
+  <div class="fixed right-4 top-1/2 transform -translate-y-1/2 z-50">
+    <Circular />
+  </div>
+  <!-- Section untuk scroll -->
+  <section class="mb-10">
+   <Scroll />
+  </section>
   <!-- Section untuk teks dengan efek animasi -->
   <section class="min-h-screen max-w-4xl mx-auto text-justify justify-center space-y-0">
     <!-- Judul animasi -->
