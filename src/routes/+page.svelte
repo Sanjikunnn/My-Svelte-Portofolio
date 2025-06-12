@@ -52,6 +52,12 @@
 	import Yukita4 from "$lib/images/project/yukita/yukita4.png";
 	import Yukita5 from "$lib/images/project/yukita/yukita5.png";
 
+	import Neo1 from "$lib/images/project/neobrutalism/Screenshot (166).png";
+	import Neo2 from "$lib/images/project/neobrutalism/Screenshot (167).png";
+	import Neo3 from "$lib/images/project/neobrutalism/Screenshot (168).png";
+	import Neo4 from "$lib/images/project/neobrutalism/Screenshot (169).png";
+	import Neo5 from "$lib/images/project/neobrutalism/Screenshot (170).png";
+
   </script>
   
   <svelte:head>
@@ -187,6 +193,13 @@
 		  buttonText="Lihat Web"
 		  buttonLink="https://yukitapuasa.vercel.app"
 		  imageList={[ Yukita1, Yukita2, Yukita3, Yukita4, Yukita5]}
+		/>
+		<ProjectCard 
+		  title="Sosmed Neobrutalism"
+		  description="Sosial Media dengan tampilan unik dan juga fitur fitur yang menarik yang berbeda dengan sosmed lainnya."
+		  buttonText="Lihat Web"
+		  buttonLink="https://neobrutalism.netlify.app/"
+		  imageList={[ Neo1, Neo2, Neo3, Neo4, Neo5]}
 		/>
 	  </div>
 	  
