@@ -58,12 +58,12 @@
 	import Neo4 from "$lib/images/project/neobrutalism/Screenshot (169).png";
 	import Neo5 from "$lib/images/project/neobrutalism/Screenshot (170).png";
 	
-	import Ang1 from "$lib/images/project/angkringan/Screenshot (124).png";
-	import Ang2 from "$lib/images/project/angkringan/Screenshot (125).png";
-	import Ang3 from "$lib/images/project/angkringan/Screenshot (126).png";
-	import Ang4 from "$lib/images/project/angkringan/Screenshot (127).png";
-	import Ang5 from "$lib/images/project/angkringan/Screenshot (128).png";
-	import Ang6 from "$lib/images/project/angkringan/Screenshot (129).png";
+	import Ang1 from "$lib/images/project/koncodewe/Screenshot (124).png";
+	import Ang2 from "$lib/images/project/koncodewe/Screenshot (125).png";
+	import Ang3 from "$lib/images/project/koncodewe/Screenshot (126).png";
+	import Ang4 from "$lib/images/project/koncodewe/Screenshot (127).png";
+	import Ang5 from "$lib/images/project/koncodewe/Screenshot (128).png";
+	import Ang6 from "$lib/images/project/koncodewe/Screenshot (129).png";
 
   </script>
   
