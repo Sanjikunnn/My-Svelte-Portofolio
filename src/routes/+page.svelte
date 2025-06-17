@@ -57,6 +57,13 @@
 	import Neo3 from "$lib/images/project/neobrutalism/Screenshot (168).png";
 	import Neo4 from "$lib/images/project/neobrutalism/Screenshot (169).png";
 	import Neo5 from "$lib/images/project/neobrutalism/Screenshot (170).png";
+	
+	import Ang1 from "$lib/images/project/angkringan/Screenshot (124).png";
+	import Ang2 from "$lib/images/project/angkringan/Screenshot (125).png";
+	import Ang3 from "$lib/images/project/angkringan/Screenshot (126).png";
+	import Ang4 from "$lib/images/project/angkringan/Screenshot (127).png";
+	import Ang5 from "$lib/images/project/angkringan/Screenshot (128).png";
+	import Ang6 from "$lib/images/project/angkringan/Screenshot (129).png";
 
   </script>
   
@@ -98,6 +105,14 @@
 	</div>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 text-justify justify-center">
+		<ProjectCard 
+		  title="Angkringan Koncodewe"
+		  description="Sistem pemesanan menu pada angkringan koncodewe dengan metode pembayaran digital menggunakan payment gateway Midtrans."
+		  buttonText="Lihat Detail"
+		  buttonLink="https://www.angkringan-koncodewe.rf.gd/"
+		  imageList={[ Ang1, Ang2, Ang3, Ang4, Ang5, Ang6]}
+		/>
+		
 		<ProjectCard 
 		  title="Sistem Penjualan Tabung Gas"
 		  description="Sistem Penjualan Gas dengan dua mode transaksi: langsung dan konsinyasi. Menyediakan laporan real-time dan UI yang ramah pengguna."
