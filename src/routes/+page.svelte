@@ -64,6 +64,13 @@
 	import Ang4 from "$lib/images/project/koncodewe/Screenshot (127).png";
 	import Ang5 from "$lib/images/project/koncodewe/Screenshot (128).png";
 	import Ang6 from "$lib/images/project/koncodewe/Screenshot (129).png";
+	
+	import Und1 from "$lib/images/project/undangan/Screenshot (130).png";
+	import Und2 from "$lib/images/project/undangan/Screenshot (131).png";
+	import Und3 from "$lib/images/project/undangan/Screenshot (132).png";
+	import Und4 from "$lib/images/project/undangan/Screenshot (133).png";
+	import Und5 from "$lib/images/project/undangan/Screenshot (134).png";
+	import Und6 from "$lib/images/project/undangan/Screenshot (135).png";
 
   </script>
   
@@ -160,6 +167,14 @@
 		  buttonText="Lihat Web"
 		  buttonLink="https://khodamku-coral.vercel.app/"
 		  imageList={[ Khodam1, Khodam2, Khodam3 ]}
+		/>
+		
+		<ProjectCard 
+		  title="Undangan Digital"
+		  description="Website undangan digital dengan ratusan template undangan digital yang menarik dan bisa di custom."
+		  buttonText="Lihat Web"
+		  buttonLink="https://dev-barudacode.pantheonsite.io/"
+		  imageList={[ Und1, Und2, Und3, Und4, Und5, Und6 ]}
 		/>
 		
 		<ProjectCard 
